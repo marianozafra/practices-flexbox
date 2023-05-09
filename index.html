@@ -7,10 +7,34 @@
     <title>Flexbox. Practice 1</title>
     <link rel="stylesheet" href="flexbox.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*Regla que sirve para que las medidas de una caja incluyan el padding y el borde, pero no el margen. Así es más fácil diseñar porque sabes que una caja de 100px no importa lo que tenga de borde y padding que siempre ocupará 100px*/
+        }
+        .container {
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .item {
+            background-color: #f1425d;
+            padding: 30px;
+            margin: 30px;
+            color: #ffffff;
         
+        }
     </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
 </body>
 </html>
