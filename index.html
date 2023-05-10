@@ -15,10 +15,10 @@
         .container {
             background-color: #ccc;
             display: flex;
-            height: 1500px;
-            flex-direction: column;
+            height: 400px;
+            flex-direction: row;
             justify-content: space-between;
-            align-items:center;
+            align-items: center;
             
 
         }
@@ -28,19 +28,25 @@
             margin: 30px;
             font-size: 45px;
             color: #ffffff;
-        
+            flex-grow: 1;
         }
-
+        .i2 {
+            height: 200px;
+        }
+        .i4 {
+            align-self: flex-end;
+            order: -1;
+            flex-grow: 2;
+            
+        }
         .img {
             display: block;
             width: 100%;
             max-width: 800px;
             margin: 200px auto;
         }
-        .i2 {
-            height: 200px;
-        }
-
+        
+       
         
     </style>
 </head>
@@ -49,7 +55,7 @@
         <div class="item">1</div>
         <div class="item i2">2</div>
         <div class="item">3</div>
-        <div class="item">4</div>
+        <div class="item i4">4</div>
         <div class="item">5</div>
     </div>
     <img class="img" src="images/cheatsheet.png">
