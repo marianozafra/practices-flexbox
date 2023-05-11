@@ -25,22 +25,28 @@
         .item {
             background-color: #f1425d;
             padding: 30px;
-            margin: 30px;
+        
             font-size: 45px;
             color: #ffffff;
-            flex-grow: 1;
-            flex-grow: 1;
+            flex-grow: 1;/*fija la base de uno. en relación a esta unidad los items crecen o no*/
+            
         }
         .i2 {
             height: 200px;
             order: -2;
-            flex-grow: 2;
+            flex-grow: 2;/*Como he puesto grow 1 a todos los item este será el doble que los demás*/
         }
         .i4 {
             align-self: flex-end;
             order: -1;
-            flex-grow: 3;
-            
+            flex-basis: 350px;/*sería como un max width*/
+            flex-shrink: 1;/*0 le dice que no se adapte y 1 que sí se adapte cuando encogemos la ventana.
+            El valor más habitual es 1
+            /*
+            */
+            flex: 0 1 300px;
+            Esta orden es lo mismo que escribir flex-grow 0, flex-shrink 1 y flex-basis 300px
+            */
         }
         .img {
             display: block;
